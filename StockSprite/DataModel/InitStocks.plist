@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>prefix</key>
+		<string>sh</string>
+		<key>code</key>
+		<string>000001</string>
+		<key>name</key>
+		<string>上证指数</string>
+	</dict>
+	<dict>
+		<key>prefix</key>
+		<string>sz</string>
+		<key>code</key>
+		<string>399001</string>
+		<key>name</key>
+		<string>深证成指</string>
+	</dict>
+	<dict>
+		<key>prefix</key>
+		<string>sz</string>
+		<key>code</key>
+		<string>399006</string>
+		<key>name</key>
+		<string>创业板指</string>
+	</dict>
+</array>
+</plist>

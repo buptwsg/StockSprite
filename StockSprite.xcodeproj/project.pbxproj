@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		181C4AED1D93CBAA00C26875 /* HangqingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C4AEC1D93CBAA00C26875 /* HangqingViewController.m */; };
+		181DD4A61D533EA600ABCEB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 181DD4A51D533EA600ABCEB6 /* AppDelegate.m */; };
+		181DD4A91D533EA600ABCEB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 181DD4A81D533EA600ABCEB6 /* main.m */; };
+		181DD4AE1D533EA600ABCEB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181DD4AD1D533EA600ABCEB6 /* Assets.xcassets */; };
+		18662F1F1D6ED865009E5DFE /* ChoicesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18662F1E1D6ED865009E5DFE /* ChoicesManager.m */; };
+		18B790D11D9136FA00C35014 /* AppPreference.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B790D01D9136FA00C35014 /* AppPreference.m */; };
+		18B790D41D91620100C35014 /* HangqingData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B790D31D91620100C35014 /* HangqingData.m */; };
+		18C614461D8E6EA100C60804 /* InitStocks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18C614451D8E6EA100C60804 /* InitStocks.plist */; };
+		18C614561D8E6EBD00C60804 /* ChoicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C614491D8E6EBD00C60804 /* ChoicesViewController.m */; };
+		18C614571D8E6EBD00C60804 /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C6144B1D8E6EBD00C60804 /* MenuController.m */; };
+		18C614581D8E6EBD00C60804 /* SettingsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C6144D1D8E6EBD00C60804 /* SettingsWindowController.m */; };
+		18C614591D8E6EBD00C60804 /* UserInterfaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C6144F1D8E6EBD00C60804 /* UserInterfaceViewController.m */; };
+		18C6145A1D8E6EBD00C60804 /* ChoicesTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C614521D8E6EBD00C60804 /* ChoicesTableView.m */; };
+		18C6145B1D8E6EBD00C60804 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C614541D8E6EBD00C60804 /* MainMenu.xib */; };
+		18C6145C1D8E6EBD00C60804 /* Windows.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C614551D8E6EBD00C60804 /* Windows.storyboard */; };
+		18C614601D8E73BC00C60804 /* Hangqing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C6145F1D8E73BC00C60804 /* Hangqing.storyboard */; };
+		18E8388F1D93760F007F4066 /* HangqingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8388E1D93760F007F4066 /* HangqingManager.m */; };
+		3E2BB838205E926BC670E151 /* libPods-StockSprite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D616AFAD41AC0D66FF7329B1 /* libPods-StockSprite.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		138880668894843574A54007 /* Pods-StockSprite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockSprite.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StockSprite/Pods-StockSprite.debug.xcconfig"; sourceTree = "<group>"; };
+		181C4AEB1D93CBAA00C26875 /* HangqingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangqingViewController.h; sourceTree = "<group>"; };
+		181C4AEC1D93CBAA00C26875 /* HangqingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangqingViewController.m; sourceTree = "<group>"; };
+		181DD4A11D533EA600ABCEB6 /* StockSprite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockSprite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		181DD4A41D533EA600ABCEB6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		181DD4A51D533EA600ABCEB6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		181DD4A81D533EA600ABCEB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		181DD4AD1D533EA600ABCEB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		181DD4B21D533EA600ABCEB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18662F1D1D6ED865009E5DFE /* ChoicesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoicesManager.h; sourceTree = "<group>"; };
+		18662F1E1D6ED865009E5DFE /* ChoicesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoicesManager.m; sourceTree = "<group>"; };
+		18B790CF1D9136FA00C35014 /* AppPreference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppPreference.h; sourceTree = "<group>"; };
+		18B790D01D9136FA00C35014 /* AppPreference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppPreference.m; sourceTree = "<group>"; };
+		18B790D21D91620100C35014 /* HangqingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangqingData.h; sourceTree = "<group>"; };
+		18B790D31D91620100C35014 /* HangqingData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangqingData.m; sourceTree = "<group>"; };
+		18C614451D8E6EA100C60804 /* InitStocks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InitStocks.plist; sourceTree = "<group>"; };
+		18C614481D8E6EBD00C60804 /* ChoicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoicesViewController.h; sourceTree = "<group>"; };
+		18C614491D8E6EBD00C60804 /* ChoicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoicesViewController.m; sourceTree = "<group>"; };
+		18C6144A1D8E6EBD00C60804 /* MenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuController.h; sourceTree = "<group>"; };
+		18C6144B1D8E6EBD00C60804 /* MenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuController.m; sourceTree = "<group>"; };
+		18C6144C1D8E6EBD00C60804 /* SettingsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsWindowController.h; sourceTree = "<group>"; };
+		18C6144D1D8E6EBD00C60804 /* SettingsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsWindowController.m; sourceTree = "<group>"; };
+		18C6144E1D8E6EBD00C60804 /* UserInterfaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInterfaceViewController.h; sourceTree = "<group>"; };
+		18C6144F1D8E6EBD00C60804 /* UserInterfaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInterfaceViewController.m; sourceTree = "<group>"; };
+		18C614511D8E6EBD00C60804 /* ChoicesTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoicesTableView.h; sourceTree = "<group>"; };
+		18C614521D8E6EBD00C60804 /* ChoicesTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoicesTableView.m; sourceTree = "<group>"; };
+		18C614541D8E6EBD00C60804 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		18C614551D8E6EBD00C60804 /* Windows.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Windows.storyboard; sourceTree = "<group>"; };
+		18C6145F1D8E73BC00C60804 /* Hangqing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Hangqing.storyboard; sourceTree = "<group>"; };
+		18E8388D1D93760F007F4066 /* HangqingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangqingManager.h; sourceTree = "<group>"; };
+		18E8388E1D93760F007F4066 /* HangqingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangqingManager.m; sourceTree = "<group>"; };
+		D616AFAD41AC0D66FF7329B1 /* libPods-StockSprite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StockSprite.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2F89E755B568C81B5EA2B42 /* Pods-StockSprite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockSprite.release.xcconfig"; path = "Pods/Target Support Files/Pods-StockSprite/Pods-StockSprite.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		181DD49E1D533EA600ABCEB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E2BB838205E926BC670E151 /* libPods-StockSprite.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		102FF66291AFD96F067D5E5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				138880668894843574A54007 /* Pods-StockSprite.debug.xcconfig */,
+				F2F89E755B568C81B5EA2B42 /* Pods-StockSprite.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		181DD4981D533EA600ABCEB6 = {
+			isa = PBXGroup;
+			children = (
+				181DD4A31D533EA600ABCEB6 /* StockSprite */,
+				181DD4A21D533EA600ABCEB6 /* Products */,
+				102FF66291AFD96F067D5E5E /* Pods */,
+				76E34FBEE5668BF95C4CBCAB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		181DD4A21D533EA600ABCEB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				181DD4A11D533EA600ABCEB6 /* StockSprite.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		181DD4A31D533EA600ABCEB6 /* StockSprite */ = {
+			isa = PBXGroup;
+			children = (
+				18C614471D8E6EBD00C60804 /* Controllers */,
+				18C614501D8E6EBD00C60804 /* CustomUI */,
+				18C614531D8E6EBD00C60804 /* StoryBoard */,
+				18662F1C1D6ED817009E5DFE /* DataModel */,
+				181DD4A41D533EA600ABCEB6 /* AppDelegate.h */,
+				181DD4A51D533EA600ABCEB6 /* AppDelegate.m */,
+				181DD4AD1D533EA600ABCEB6 /* Assets.xcassets */,
+				181DD4B21D533EA600ABCEB6 /* Info.plist */,
+				181DD4A71D533EA600ABCEB6 /* Supporting Files */,
+			);
+			path = StockSprite;
+			sourceTree = "<group>";
+		};
+		181DD4A71D533EA600ABCEB6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				181DD4A81D533EA600ABCEB6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18662F1C1D6ED817009E5DFE /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				18C614451D8E6EA100C60804 /* InitStocks.plist */,
+				18662F1D1D6ED865009E5DFE /* ChoicesManager.h */,
+				18662F1E1D6ED865009E5DFE /* ChoicesManager.m */,
+				18B790CF1D9136FA00C35014 /* AppPreference.h */,
+				18B790D01D9136FA00C35014 /* AppPreference.m */,
+				18B790D21D91620100C35014 /* HangqingData.h */,
+				18B790D31D91620100C35014 /* HangqingData.m */,
+				18E8388D1D93760F007F4066 /* HangqingManager.h */,
+				18E8388E1D93760F007F4066 /* HangqingManager.m */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		18C614471D8E6EBD00C60804 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18C6144A1D8E6EBD00C60804 /* MenuController.h */,
+				18C6144B1D8E6EBD00C60804 /* MenuController.m */,
+				18C6144C1D8E6EBD00C60804 /* SettingsWindowController.h */,
+				18C6144D1D8E6EBD00C60804 /* SettingsWindowController.m */,
+				18C614481D8E6EBD00C60804 /* ChoicesViewController.h */,
+				18C614491D8E6EBD00C60804 /* ChoicesViewController.m */,
+				18C6144E1D8E6EBD00C60804 /* UserInterfaceViewController.h */,
+				18C6144F1D8E6EBD00C60804 /* UserInterfaceViewController.m */,
+				181C4AEB1D93CBAA00C26875 /* HangqingViewController.h */,
+				181C4AEC1D93CBAA00C26875 /* HangqingViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18C614501D8E6EBD00C60804 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				18C614511D8E6EBD00C60804 /* ChoicesTableView.h */,
+				18C614521D8E6EBD00C60804 /* ChoicesTableView.m */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		18C614531D8E6EBD00C60804 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				18C614541D8E6EBD00C60804 /* MainMenu.xib */,
+				18C614551D8E6EBD00C60804 /* Windows.storyboard */,
+				18C6145F1D8E73BC00C60804 /* Hangqing.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		76E34FBEE5668BF95C4CBCAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D616AFAD41AC0D66FF7329B1 /* libPods-StockSprite.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		181DD4A01D533EA600ABCEB6 /* StockSprite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 181DD4B51D533EA600ABCEB6 /* Build configuration list for PBXNativeTarget "StockSprite" */;
+			buildPhases = (
+				71CC96468C0C49E785CFB3A2 /* 📦 Check Pods Manifest.lock */,
+				181DD49D1D533EA600ABCEB6 /* Sources */,
+				181DD49E1D533EA600ABCEB6 /* Frameworks */,
+				181DD49F1D533EA600ABCEB6 /* Resources */,
+				022E3019E79D895E96C0C56F /* 📦 Embed Pods Frameworks */,
+				4E8CC89C1237D53A74694AC5 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StockSprite;
+			productName = StockSprite;
+			productReference = 181DD4A11D533EA600ABCEB6 /* StockSprite.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		181DD4991D533EA600ABCEB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "wang shuguang";
+				TargetAttributes = {
+					181DD4A01D533EA600ABCEB6 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 181DD49C1D533EA600ABCEB6 /* Build configuration list for PBXProject "StockSprite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 181DD4981D533EA600ABCEB6;
+			productRefGroup = 181DD4A21D533EA600ABCEB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				181DD4A01D533EA600ABCEB6 /* StockSprite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		181DD49F1D533EA600ABCEB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C6145C1D8E6EBD00C60804 /* Windows.storyboard in Resources */,
+				18C614461D8E6EA100C60804 /* InitStocks.plist in Resources */,
+				181DD4AE1D533EA600ABCEB6 /* Assets.xcassets in Resources */,
+				18C6145B1D8E6EBD00C60804 /* MainMenu.xib in Resources */,
+				18C614601D8E73BC00C60804 /* Hangqing.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		022E3019E79D895E96C0C56F /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StockSprite/Pods-StockSprite-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E8CC89C1237D53A74694AC5 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StockSprite/Pods-StockSprite-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71CC96468C0C49E785CFB3A2 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		181DD49D1D533EA600ABCEB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E8388F1D93760F007F4066 /* HangqingManager.m in Sources */,
+				181DD4A91D533EA600ABCEB6 /* main.m in Sources */,
+				181DD4A61D533EA600ABCEB6 /* AppDelegate.m in Sources */,
+				18B790D11D9136FA00C35014 /* AppPreference.m in Sources */,
+				18C614591D8E6EBD00C60804 /* UserInterfaceViewController.m in Sources */,
+				18B790D41D91620100C35014 /* HangqingData.m in Sources */,
+				18C614571D8E6EBD00C60804 /* MenuController.m in Sources */,
+				181C4AED1D93CBAA00C26875 /* HangqingViewController.m in Sources */,
+				18662F1F1D6ED865009E5DFE /* ChoicesManager.m in Sources */,
+				18C614581D8E6EBD00C60804 /* SettingsWindowController.m in Sources */,
+				18C6145A1D8E6EBD00C60804 /* ChoicesTableView.m in Sources */,
+				18C614561D8E6EBD00C60804 /* ChoicesViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		181DD4B31D533EA600ABCEB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		181DD4B41D533EA600ABCEB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		181DD4B61D533EA600ABCEB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 138880668894843574A54007 /* Pods-StockSprite.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StockSprite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cleanairgames.StockSprite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		181DD4B71D533EA600ABCEB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2F89E755B568C81B5EA2B42 /* Pods-StockSprite.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StockSprite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cleanairgames.StockSprite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		181DD49C1D533EA600ABCEB6 /* Build configuration list for PBXProject "StockSprite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				181DD4B31D533EA600ABCEB6 /* Debug */,
+				181DD4B41D533EA600ABCEB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		181DD4B51D533EA600ABCEB6 /* Build configuration list for PBXNativeTarget "StockSprite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				181DD4B61D533EA600ABCEB6 /* Debug */,
+				181DD4B71D533EA600ABCEB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 181DD4991D533EA600ABCEB6 /* Project object */;
+}

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="eA3-wQ-VF6">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="0rP-Nk-L2A">
+            <objects>
+                <windowController id="eA3-wQ-VF6" customClass="SettingsWindowController" sceneMemberID="viewController">
+                    <window key="window" title="设置" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="RrO-OS-4fd">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" bottomStrut="YES"/>
+                        <rect key="contentRect" x="425" y="27" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+                        <toolbar key="toolbar" implicitIdentifier="AF9E440F-8F8D-4011-AA19-9BF467C63123" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="Geu-zo-ta7">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="9F2403F7-619C-454C-9552-BD1A89CD007B" explicitItemIdentifier="choice" label="自选" paletteLabel="自选" image="home_icon_101" selectable="YES" id="XJ9-bX-Hwg">
+                                    <size key="minSize" width="40" height="40"/>
+                                    <size key="maxSize" width="120" height="120"/>
+                                    <connections>
+                                        <action selector="onBarItemClicked:" target="eA3-wQ-VF6" id="h76-kJ-jlT"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="D4A91909-8F21-4C66-B076-EAB2273DC37D" explicitItemIdentifier="notify" label="提醒" paletteLabel="提醒" tag="1" image="home_icon_102" selectable="YES" id="Ahw-Am-GMe">
+                                    <size key="minSize" width="40" height="40"/>
+                                    <size key="maxSize" width="120" height="120"/>
+                                    <connections>
+                                        <action selector="onBarItemClicked:" target="eA3-wQ-VF6" id="8xu-Ex-XNV"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="E19A3D0E-0630-4F07-89C1-B735B74A5E07" explicitItemIdentifier="ui" label="界面" paletteLabel="界面" tag="2" image="home_icon_103" selectable="YES" id="PHc-fp-dxx">
+                                    <size key="minSize" width="40" height="40"/>
+                                    <size key="maxSize" width="120" height="120"/>
+                                    <connections>
+                                        <action selector="onBarItemClicked:" target="eA3-wQ-VF6" id="ad3-4a-zp7"/>
+                                    </connections>
+                                </toolbarItem>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems/>
+                        </toolbar>
+                    </window>
+                    <connections>
+                        <segue destination="Y2g-2O-3tV" kind="relationship" relationship="window.shadowedContentViewController" id="bgd-ab-eLt"/>
+                    </connections>
+                </windowController>
+                <customObject id="Kg2-Zq-Q8V" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="383" y="383"/>
+        </scene>
+        <!--Choices View Controller-->
+        <scene sceneID="LL6-SW-j5P">
+            <objects>
+                <viewController storyboardIdentifier="choices" id="Y2g-2O-3tV" customClass="ChoicesViewController" sceneMemberID="viewController">
+                    <view key="view" id="5US-Ap-MIs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KL2-0k-gEc">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bU0-tK-UeD">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="350"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <clipView key="contentView" ambiguous="YES" id="Twz-0q-QH3">
+                                            <rect key="frame" x="1" y="0.0" width="298" height="349"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="PhN-9I-uG3" viewBased="YES" id="BuD-Fn-UyG" customClass="ChoicesTableView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="298" height="326"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <size key="intercellSpacing" width="3" height="2"/>
+                                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                                    <tableColumns>
+                                                        <tableColumn width="142" minWidth="40" maxWidth="1000" id="HVa-XS-GcJ">
+                                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="证券代码">
+                                                                <font key="font" metaFont="smallSystem"/>
+                                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                            </tableHeaderCell>
+                                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" title="Text Cell" id="Lqq-fA-nDB">
+                                                                <font key="font" metaFont="system"/>
+                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                            </textFieldCell>
+                                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                            <prototypeCellViews>
+                                                                <tableCellView identifier="cellCode" id="Shm-5b-yV3">
+                                                                    <rect key="frame" x="1" y="1" width="142" height="17"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                    <subviews>
+                                                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="17M-3r-2i8">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="142" height="17"/>
+                                                                            <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" title="Table View Cell" id="OM9-wS-XAK">
+                                                                                <font key="font" metaFont="system"/>
+                                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                            </textFieldCell>
+                                                                        </textField>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="trailing" secondItem="17M-3r-2i8" secondAttribute="trailing" constant="2" id="9xX-WG-0Yg"/>
+                                                                        <constraint firstItem="17M-3r-2i8" firstAttribute="centerY" secondItem="Shm-5b-yV3" secondAttribute="centerY" id="btk-YV-ib8"/>
+                                                                        <constraint firstItem="17M-3r-2i8" firstAttribute="leading" secondItem="Shm-5b-yV3" secondAttribute="leading" constant="2" id="jFo-B4-aXH"/>
+                                                                    </constraints>
+                                                                    <connections>
+                                                                        <outlet property="textField" destination="17M-3r-2i8" id="Wax-3U-eGl"/>
+                                                                    </connections>
+                                                                </tableCellView>
+                                                            </prototypeCellViews>
+                                                        </tableColumn>
+                                                        <tableColumn width="150" minWidth="40" maxWidth="1000" id="wpw-7t-vol">
+                                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="证券简称">
+                                                                <font key="font" metaFont="smallSystem"/>
+                                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                            </tableHeaderCell>
+                                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" title="Text Cell" id="nyK-lP-x9O">
+                                                                <font key="font" metaFont="system"/>
+                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                            </textFieldCell>
+                                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                            <prototypeCellViews>
+                                                                <tableCellView identifier="cellName" id="Obb-k0-WHE">
+                                                                    <rect key="frame" x="146" y="1" width="150" height="17"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                    <subviews>
+                                                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="kar-tj-RrB">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="150" height="17"/>
+                                                                            <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" title="Table View Cell" id="TKw-6J-LzT">
+                                                                                <font key="font" metaFont="system"/>
+                                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                            </textFieldCell>
+                                                                        </textField>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstItem="kar-tj-RrB" firstAttribute="centerY" secondItem="Obb-k0-WHE" secondAttribute="centerY" id="ujF-0W-AQj"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="kar-tj-RrB" secondAttribute="trailing" constant="2" id="ywh-4Z-4Fu"/>
+                                                                        <constraint firstItem="kar-tj-RrB" firstAttribute="leading" secondItem="Obb-k0-WHE" secondAttribute="leading" constant="2" id="zBd-qB-uWr"/>
+                                                                    </constraints>
+                                                                    <connections>
+                                                                        <outlet property="textField" destination="kar-tj-RrB" id="apw-Ec-7qR"/>
+                                                                    </connections>
+                                                                </tableCellView>
+                                                            </prototypeCellViews>
+                                                        </tableColumn>
+                                                    </tableColumns>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="Y2g-2O-3tV" id="S0h-5W-ReF"/>
+                                                        <outlet property="delegate" destination="Y2g-2O-3tV" id="tuv-VQ-OaV"/>
+                                                    </connections>
+                                                </tableView>
+                                            </subviews>
+                                        </clipView>
+                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="gXE-IQ-H0M">
+                                            <rect key="frame" x="1" y="8" width="0.0" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="ucs-cA-Ece">
+                                            <rect key="frame" x="224" y="17" width="15" height="102"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </scroller>
+                                        <tableHeaderView key="headerView" id="PhN-9I-uG3">
+                                            <rect key="frame" x="0.0" y="0.0" width="298" height="23"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableHeaderView>
+                                    </scrollView>
+                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cr4-j5-Lpg">
+                                        <rect key="frame" x="158" y="358" width="81" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" title="添加" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="S7m-4H-mzQ">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="addStock:" target="Y2g-2O-3tV" id="tgK-pR-Vk9"/>
+                                        </connections>
+                                    </button>
+                                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hzq-Eo-cCw">
+                                        <rect key="frame" x="20" y="360" width="125" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" alignment="left" placeholderString="请输入代码" drawsBackground="YES" id="XJ2-6P-Ucu">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <connections>
+                                            <action selector="addStock:" target="Y2g-2O-3tV" id="gLJ-lN-eiF"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </customView>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="inputTextField" destination="hzq-Eo-cCw" id="wQ9-Wx-JYq"/>
+                        <outlet property="tableView" destination="BuD-Fn-UyG" id="vw9-27-nQf"/>
+                    </connections>
+                </viewController>
+                <customObject id="Mfa-bN-Jpb" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <userDefaultsController representsSharedInstance="YES" id="eKN-ko-rQa"/>
+            </objects>
+            <point key="canvasLocation" x="389" y="937"/>
+        </scene>
+        <!--User Interface View Controller-->
+        <scene sceneID="fmc-bm-XSh">
+            <objects>
+                <viewController storyboardIdentifier="userInterface" id="x8n-Fg-HtL" customClass="UserInterfaceViewController" sceneMemberID="viewController">
+                    <view key="view" id="0JM-lX-G2c">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0kk-w0-6hT">
+                                <rect key="frame" x="18" y="363" width="82" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="自定义热键：" id="i1t-Ek-QDd">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yHX-mY-XN6" customClass="MASShortcutView">
+                                <rect key="frame" x="98" y="361" width="163" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </customView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ee-gW-SNV">
+                                <rect key="frame" x="18" y="329" width="69" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="透明背景：" id="1e3-F9-Kz8">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bjP-LN-fRc">
+                                <rect key="frame" x="96" y="327" width="48" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="使用" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="UfZ-ay-J3C">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="checkboxClicked:" target="x8n-Fg-HtL" id="5kL-tV-up8"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ETn-TC-b5Y">
+                                <rect key="frame" x="18" y="296" width="95" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="额外行情信息：" id="FsF-Xu-dhi">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="rTc-FI-g0A">
+                                <rect key="frame" x="108" y="295" width="48" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="今开" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="a9G-bD-fcE">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="checkboxClicked:" target="x8n-Fg-HtL" id="yJc-fk-eBb"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="ShF-yo-SkD">
+                                <rect key="frame" x="161" y="294" width="61" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="昨收" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="zAV-Sa-rNb">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="checkboxClicked:" target="x8n-Fg-HtL" id="aKd-LJ-2T7"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="xc8-5e-rBh">
+                                <rect key="frame" x="214" y="294" width="61" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="最高" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="AHh-0l-54B">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="checkboxClicked:" target="x8n-Fg-HtL" id="LR2-m6-a0h"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="p9k-L9-mrL">
+                                <rect key="frame" x="267" y="294" width="61" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="最低" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="zUe-5G-ewp">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="checkboxClicked:" target="x8n-Fg-HtL" id="KvT-88-ybS"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" tag="5" translatesAutoresizingMaskIntoConstraints="NO" id="UFo-cs-ZzD">
+                                <rect key="frame" x="319" y="294" width="61" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="成交量" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="a6z-RZ-fyK">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="checkboxClicked:" target="x8n-Fg-HtL" id="wKr-Df-MZm"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" tag="6" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-sE-Nek">
+                                <rect key="frame" x="384" y="294" width="74" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="成交金额" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="WK7-YC-5yp">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="checkboxClicked:" target="x8n-Fg-HtL" id="8XW-dY-sIK"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T2W-DW-ODu">
+                                <rect key="frame" x="20" y="271" width="97" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="行情刷新频率：" id="nGD-0t-XWc">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ag3-Ge-HYR">
+                                <rect key="frame" x="114" y="266" width="76" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="D7L-ay-HpY" id="NFr-B0-zNk">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="hvp-QC-4N9">
+                                        <items>
+                                            <menuItem title="Item 1" state="on" id="D7L-ay-HpY"/>
+                                            <menuItem title="Item 2" id="uUU-4D-ccX"/>
+                                            <menuItem title="Item 3" id="e2J-hd-Hz1"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="intervalSelected:" target="x8n-Fg-HtL" id="5UL-p4-uUh"/>
+                                </connections>
+                            </popUpButton>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="checkBackground" destination="bjP-LN-fRc" id="LA6-ps-3tK"/>
+                        <outlet property="checkHighest" destination="xc8-5e-rBh" id="eJr-7q-kOv"/>
+                        <outlet property="checkLowest" destination="p9k-L9-mrL" id="ntf-1b-0PY"/>
+                        <outlet property="checkMoney" destination="GJd-sE-Nek" id="uDQ-5Q-4Lf"/>
+                        <outlet property="checkTodayOpen" destination="rTc-FI-g0A" id="qe7-zp-im7"/>
+                        <outlet property="checkVolume" destination="UFo-cs-ZzD" id="akW-Cb-fD1"/>
+                        <outlet property="checkYesterdayClose" destination="ShF-yo-SkD" id="3ZG-Vf-arX"/>
+                        <outlet property="popupIntervals" destination="ag3-Ge-HYR" id="HrW-Bc-i9C"/>
+                        <outlet property="shortcutView" destination="yHX-mY-XN6" id="22k-ci-eqL"/>
+                    </connections>
+                </viewController>
+                <customObject id="FSQ-3y-TGU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1063" y="937"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home_icon_101" width="120" height="120"/>
+        <image name="home_icon_102" width="120" height="120"/>
+        <image name="home_icon_103" width="120" height="120"/>
+    </resources>
+</document>
