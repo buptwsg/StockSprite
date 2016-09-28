@@ -42,7 +42,6 @@ NSString * const kHangqingDidRefreshNotification = @"kHangqingDidRefreshNotifica
 }
 
 - (void)refreshHangqing {
-    NSLog(@"Hangqing Manager, refresh hangqing");
     if (nil == self.strUrl) {
         NSMutableString *strUrl = [NSMutableString stringWithString: @"http://hq.sinajs.cn/list="];
         for (NSUInteger i = 0; i < self.dataArray.count; i++) {

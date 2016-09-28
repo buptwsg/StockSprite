@@ -68,9 +68,6 @@ extern NSString *const kPreferenceGlobalShortcut;
     
     NSStoryboard *sb = [NSStoryboard storyboardWithName: @"Windows" bundle: nil];
     _settingWindowController = [sb instantiateInitialController];
-    //窗口在最前
-    [_settingWindowController.window setLevel:NSScreenSaverWindowLevel + 1];
-    [_settingWindowController.window orderFront:nil];
     
     [_settingWindowController showWindow: nil];
 }
