@@ -260,7 +260,7 @@
                             <button fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="rTc-FI-g0A">
                                 <rect key="frame" x="108" y="295" width="48" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="今开" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="a9G-bD-fcE">
+                                <buttonCell key="cell" type="check" title="今开" bezelStyle="regularSquare" imagePosition="left" inset="2" id="a9G-bD-fcE">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" size="13" name=".PingFangSC-Regular"/>
                                 </buttonCell>
@@ -271,7 +271,7 @@
                             <button fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="ShF-yo-SkD">
                                 <rect key="frame" x="161" y="294" width="61" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="昨收" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="zAV-Sa-rNb">
+                                <buttonCell key="cell" type="check" title="昨收" bezelStyle="regularSquare" imagePosition="left" inset="2" id="zAV-Sa-rNb">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -282,7 +282,7 @@
                             <button fixedFrame="YES" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="xc8-5e-rBh">
                                 <rect key="frame" x="214" y="294" width="61" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="最高" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="AHh-0l-54B">
+                                <buttonCell key="cell" type="check" title="最高" bezelStyle="regularSquare" imagePosition="left" inset="2" id="AHh-0l-54B">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -293,7 +293,7 @@
                             <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="p9k-L9-mrL">
                                 <rect key="frame" x="267" y="294" width="61" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="最低" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="zUe-5G-ewp">
+                                <buttonCell key="cell" type="check" title="最低" bezelStyle="regularSquare" imagePosition="left" inset="2" id="zUe-5G-ewp">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -304,7 +304,7 @@
                             <button fixedFrame="YES" tag="5" translatesAutoresizingMaskIntoConstraints="NO" id="UFo-cs-ZzD">
                                 <rect key="frame" x="319" y="294" width="61" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="成交量" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="a6z-RZ-fyK">
+                                <buttonCell key="cell" type="check" title="成交量" bezelStyle="regularSquare" imagePosition="left" inset="2" id="a6z-RZ-fyK">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -315,7 +315,7 @@
                             <button fixedFrame="YES" tag="6" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-sE-Nek">
                                 <rect key="frame" x="384" y="294" width="74" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="成交金额" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="WK7-YC-5yp">
+                                <buttonCell key="cell" type="check" title="成交金额" bezelStyle="regularSquare" imagePosition="left" inset="2" id="WK7-YC-5yp">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -324,7 +324,7 @@
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T2W-DW-ODu">
-                                <rect key="frame" x="20" y="271" width="97" height="17"/>
+                                <rect key="frame" x="18" y="245" width="97" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="行情刷新频率：" id="nGD-0t-XWc">
                                     <font key="font" size="13" name=".PingFangSC-Regular"/>
@@ -333,7 +333,7 @@
                                 </textFieldCell>
                             </textField>
                             <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ag3-Ge-HYR">
-                                <rect key="frame" x="114" y="266" width="76" height="26"/>
+                                <rect key="frame" x="112" y="240" width="76" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="D7L-ay-HpY" id="NFr-B0-zNk">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -350,13 +350,37 @@
                                     <action selector="intervalSelected:" target="x8n-Fg-HtL" id="5UL-p4-uUh"/>
                                 </connections>
                             </popUpButton>
+                            <button fixedFrame="YES" tag="7" translatesAutoresizingMaskIntoConstraints="NO" id="b5G-xq-dqn">
+                                <rect key="frame" x="108" y="272" width="61" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="涨跌额" bezelStyle="regularSquare" imagePosition="left" inset="2" id="JMC-jr-sOb">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="checkboxClicked:" target="x8n-Fg-HtL" id="6AA-vw-Vi3"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" tag="8" translatesAutoresizingMaskIntoConstraints="NO" id="3H4-LY-cRY">
+                                <rect key="frame" x="183" y="272" width="61" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="振幅" bezelStyle="regularSquare" imagePosition="left" inset="2" id="9GT-kb-SLg">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="checkboxClicked:" target="x8n-Fg-HtL" id="9cA-qx-Q7V"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="checkBackground" destination="bjP-LN-fRc" id="LA6-ps-3tK"/>
+                        <outlet property="checkDelta" destination="b5G-xq-dqn" id="3Cd-HK-OHo"/>
                         <outlet property="checkHighest" destination="xc8-5e-rBh" id="eJr-7q-kOv"/>
                         <outlet property="checkLowest" destination="p9k-L9-mrL" id="ntf-1b-0PY"/>
                         <outlet property="checkMoney" destination="GJd-sE-Nek" id="uDQ-5Q-4Lf"/>
+                        <outlet property="checkRangePercent" destination="3H4-LY-cRY" id="ecC-t4-ZNn"/>
                         <outlet property="checkTodayOpen" destination="rTc-FI-g0A" id="qe7-zp-im7"/>
                         <outlet property="checkVolume" destination="UFo-cs-ZzD" id="akW-Cb-fD1"/>
                         <outlet property="checkYesterdayClose" destination="ShF-yo-SkD" id="3ZG-Vf-arX"/>

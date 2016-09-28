@@ -23,6 +23,9 @@ NSString *const kPreferenceGlobalShortcut = @"GlobalShortcut";
 @property (weak) IBOutlet NSButton *checkLowest;
 @property (weak) IBOutlet NSButton *checkVolume;
 @property (weak) IBOutlet NSButton *checkMoney;
+@property (weak) IBOutlet NSButton *checkDelta;
+@property (weak) IBOutlet NSButton *checkRangePercent;
+
 @property (weak) IBOutlet NSPopUpButton *popupIntervals;
 
 @end
@@ -47,6 +50,8 @@ NSString *const kPreferenceGlobalShortcut = @"GlobalShortcut";
     _checkLowest.state = (Preference.detailMask & StockDetailLowest) ? NSOnState : NSOffState;
     _checkVolume.state = (Preference.detailMask & StockDetailVolume) ? NSOnState : NSOffState;
     _checkMoney.state = (Preference.detailMask & StockDetailMoney) ? NSOnState : NSOffState;
+    _checkDelta.state = (Preference.detailMask & StockDetailDelta) ? NSOnState : NSOffState;
+    _checkRangePercent.state = (Preference.detailMask & StockDetailRangePercent) ? NSOnState : NSOffState;
     
     [_popupIntervals removeAllItems];
     [_popupIntervals addItemsWithTitles: @[@"2秒", @"3秒", @"4秒", @"5秒"]];
@@ -101,6 +106,14 @@ NSString *const kPreferenceGlobalShortcut = @"GlobalShortcut";
             
         case 6:
             Preference.detailMask ^= StockDetailMoney;
+            break;
+            
+        case 7:
+            Preference.detailMask ^= StockDetailDelta;
+            break;
+            
+        case 8:
+            Preference.detailMask ^= StockDetailRangePercent;
             break;
             
         default:

@@ -31,9 +31,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibx-5Q-RjX">
+                            <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibx-5Q-RjX">
                                 <rect key="frame" x="0.0" y="0.0" width="1000" height="400"/>
-                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="EIA-pE-QZH">
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <clipView key="contentView" ambiguous="YES" drawsBackground="NO" copiesOnScroll="NO" id="EIA-pE-QZH">
                                     <rect key="frame" x="1" y="0.0" width="998" height="399"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
@@ -462,12 +463,6 @@
                                 </tableHeaderView>
                             </scrollView>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="ibx-5Q-RjX" firstAttribute="leading" secondItem="mdw-b3-WGE" secondAttribute="leading" id="2Ww-8m-pUZ"/>
-                            <constraint firstAttribute="bottom" secondItem="ibx-5Q-RjX" secondAttribute="bottom" id="Ald-8h-61N"/>
-                            <constraint firstItem="ibx-5Q-RjX" firstAttribute="top" secondItem="mdw-b3-WGE" secondAttribute="top" id="CM4-cL-GMF"/>
-                            <constraint firstAttribute="trailing" secondItem="ibx-5Q-RjX" secondAttribute="trailing" id="JZ5-59-kRM"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="eRp-0b-i6r" id="EOI-9b-mwb"/>

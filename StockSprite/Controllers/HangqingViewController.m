@@ -14,6 +14,7 @@
 @interface HangqingViewController () <NSTableViewDataSource, NSTableViewDelegate>
 {
     NSTimer *_refreshTimer;
+    BOOL _hideFlags[20];
 }
 
 @property (nonatomic, strong) HangqingManager *hqManager;
@@ -25,6 +26,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    memset(_hideFlags, 0, sizeof(_hideFlags));
     
     self.hqManager = [[HangqingManager alloc] init];
     [self.hqManager refreshHangqing];
@@ -84,11 +87,16 @@
         cell.textField.textColor = [self fixColor: hqData forInformation: hqData.currentPrice];
     }
     else if (tableColumn == self.tableView.tableColumns[3]) {
-        cellId = @"cellDelta";
-        text = [self fixString: hqData.delta];
-        cell = [tableView makeViewWithIdentifier: cellId owner: nil];
-        cell.textField.stringValue = text;
-        cell.textField.textColor = [self fixColor: hqData forInformation: hqData.currentPrice];
+        if (Preference.detailMask & StockDetailDelta) {
+            cellId = @"cellDelta";
+            text = [self fixString: hqData.delta];
+            cell = [tableView makeViewWithIdentifier: cellId owner: nil];
+            cell.textField.stringValue = text;
+            cell.textField.textColor = [self fixColor: hqData forInformation: hqData.currentPrice];
+        }
+        else {
+            [self hideColumn: tableColumn index: 3];
+        }
     }
     else if (tableColumn == self.tableView.tableColumns[4]) {
         cellId = @"cellDeltaPercent";
@@ -98,50 +106,85 @@
         cell.textField.textColor = [self fixColor: hqData forInformation: hqData.currentPrice];
     }
     else if (tableColumn == self.tableView.tableColumns[5]) {
-        cellId = @"cellRangePercent";
-        text = [self fixString: hqData.rangePercent];
-        cell = [tableView makeViewWithIdentifier: cellId owner: nil];
-        cell.textField.stringValue = text;
-        cell.textField.textColor = [NSColor whiteColor];
+        if (Preference.detailMask & StockDetailRangePercent) {
+            cellId = @"cellRangePercent";
+            text = [self fixString: hqData.rangePercent];
+            cell = [tableView makeViewWithIdentifier: cellId owner: nil];
+            cell.textField.stringValue = text;
+            cell.textField.textColor = [NSColor whiteColor];
+        }
+        else {
+            [self hideColumn: tableColumn index: 5];
+        }
     }
     else if (tableColumn == self.tableView.tableColumns[6]) {
-        cellId = @"cellOpenPrice";
-        text = [self fixString: hqData.todayOpenPrice];
-        cell = [tableView makeViewWithIdentifier: cellId owner: nil];
-        cell.textField.stringValue = text;
-        cell.textField.textColor = [self fixColor: hqData forInformation: hqData.todayOpenPrice];
+        if (Preference.detailMask & StockDetailTodayOpenPrice) {
+            cellId = @"cellOpenPrice";
+            text = [self fixString: hqData.todayOpenPrice];
+            cell = [tableView makeViewWithIdentifier: cellId owner: nil];
+            cell.textField.stringValue = text;
+            cell.textField.textColor = [self fixColor: hqData forInformation: hqData.todayOpenPrice];
+        }
+        else {
+            [self hideColumn: tableColumn index: 6];
+        }
     }
     else if (tableColumn == self.tableView.tableColumns[7]) {
-        cellId = @"cellClosePrice";
-        text = [self fixString: hqData.yesterdayClosePrice];
-        cell = [tableView makeViewWithIdentifier: cellId owner: nil];
-        cell.textField.stringValue = text;
+        if (Preference.detailMask & StockDetailYesterdayClosePrice) {
+            cellId = @"cellClosePrice";
+            text = [self fixString: hqData.yesterdayClosePrice];
+            cell = [tableView makeViewWithIdentifier: cellId owner: nil];
+            cell.textField.stringValue = text;
+        }
+        else {
+            [self hideColumn: tableColumn index: 7];
+        }
     }
     else if (tableColumn == self.tableView.tableColumns[8]) {
-        cellId = @"cellHighestPrice";
-        text = [self fixString: hqData.highestPrice];
-        cell = [tableView makeViewWithIdentifier: cellId owner: nil];
-        cell.textField.stringValue = text;
-        cell.textField.textColor = [self fixColor: hqData forInformation: hqData.highestPrice];
+        if (Preference.detailMask & StockDetailHighest) {
+            cellId = @"cellHighestPrice";
+            text = [self fixString: hqData.highestPrice];
+            cell = [tableView makeViewWithIdentifier: cellId owner: nil];
+            cell.textField.stringValue = text;
+            cell.textField.textColor = [self fixColor: hqData forInformation: hqData.highestPrice];
+        }
+        else {
+            [self hideColumn: tableColumn index: 8];
+        }
     }
     else if (tableColumn == self.tableView.tableColumns[9]) {
-        cellId = @"cellLowestPrice";
-        text = [self fixString: hqData.lowestPrice];
-        cell = [tableView makeViewWithIdentifier: cellId owner: nil];
-        cell.textField.stringValue = text;
-        cell.textField.textColor = [self fixColor: hqData forInformation: hqData.lowestPrice];
+        if (Preference.detailMask & StockDetailLowest) {
+            cellId = @"cellLowestPrice";
+            text = [self fixString: hqData.lowestPrice];
+            cell = [tableView makeViewWithIdentifier: cellId owner: nil];
+            cell.textField.stringValue = text;
+            cell.textField.textColor = [self fixColor: hqData forInformation: hqData.lowestPrice];
+        }
+        else {
+            [self hideColumn: tableColumn index: 9];
+        }
     }
     else if (tableColumn == self.tableView.tableColumns[10]) {
-        cellId = @"cellVolume";
-        text = [self fixVolume: hqData.volume isShanghaiIndex: [hqData.stockName isEqualToString: @"上证指数"]];
-        cell = [tableView makeViewWithIdentifier: cellId owner: nil];
-        cell.textField.stringValue = text;
+        if (Preference.detailMask & StockDetailVolume) {
+            cellId = @"cellVolume";
+            text = [self fixVolume: hqData.volume isShanghaiIndex: [hqData.stockName isEqualToString: @"上证指数"]];
+            cell = [tableView makeViewWithIdentifier: cellId owner: nil];
+            cell.textField.stringValue = text;
+        }
+        else {
+            [self hideColumn: tableColumn index: 10];
+        }
     }
     else if (tableColumn == self.tableView.tableColumns[11]) {
-        cellId = @"cellMoney";
-        text = [self fixMoney: hqData.money];
-        cell = [tableView makeViewWithIdentifier: cellId owner: nil];
-        cell.textField.stringValue = text;
+        if (Preference.detailMask & StockDetailMoney) {
+            cellId = @"cellMoney";
+            text = [self fixMoney: hqData.money];
+            cell = [tableView makeViewWithIdentifier: cellId owner: nil];
+            cell.textField.stringValue = text;
+        }
+        else {
+            [self hideColumn: tableColumn index: 11];
+        }
     }
     
     return cell;
@@ -224,6 +267,17 @@
     }
     else {
         return [NSColor greenColor];
+    }
+}
+
+- (void)hideColumn: (NSTableColumn*)column index: (NSInteger)columnIndex {
+    if (!_hideFlags[columnIndex]) {
+        _hideFlags[columnIndex] = YES;
+        [column setHidden: YES];
+        
+        CGRect oldFrame = self.view.frame;
+        CGRect newFrame = CGRectMake(oldFrame.origin.x, oldFrame.origin.y, oldFrame.size.width - column.width - 3, oldFrame.size.height);
+        [self.view.window setContentSize: newFrame.size];
     }
 }
 

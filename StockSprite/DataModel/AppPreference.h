@@ -15,6 +15,8 @@ typedef NS_OPTIONS(NSInteger, StockDetailMask) {
     StockDetailLowest = 1 << 3,
     StockDetailVolume = 1 << 4,
     StockDetailMoney = 1 << 5,
+    StockDetailDelta = 1 << 6,
+    StockDetailRangePercent = 1 << 7
 };
 
 #define Preference [AppPreference sharedInstance]
