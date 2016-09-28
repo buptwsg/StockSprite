@@ -31,7 +31,7 @@
 		138880668894843574A54007 /* Pods-StockSprite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockSprite.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StockSprite/Pods-StockSprite.debug.xcconfig"; sourceTree = "<group>"; };
 		181C4AEB1D93CBAA00C26875 /* HangqingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangqingViewController.h; sourceTree = "<group>"; };
 		181C4AEC1D93CBAA00C26875 /* HangqingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangqingViewController.m; sourceTree = "<group>"; };
-		181DD4A11D533EA600ABCEB6 /* StockSprite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockSprite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		181DD4A11D533EA600ABCEB6 /* 行情精灵.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "行情精灵.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		181DD4A41D533EA600ABCEB6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		181DD4A51D533EA600ABCEB6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		181DD4A81D533EA600ABCEB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 		181DD4A21D533EA600ABCEB6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				181DD4A11D533EA600ABCEB6 /* StockSprite.app */,
+				181DD4A11D533EA600ABCEB6 /* 行情精灵.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,7 +206,7 @@
 			);
 			name = StockSprite;
 			productName = StockSprite;
-			productReference = 181DD4A11D533EA600ABCEB6 /* StockSprite.app */;
+			productReference = 181DD4A11D533EA600ABCEB6 /* 行情精灵.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -421,7 +421,7 @@
 				INFOPLIST_FILE = StockSprite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cleanairgames.StockSprite;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "行情精灵";
 			};
 			name = Debug;
 		};
@@ -434,7 +434,7 @@
 				INFOPLIST_FILE = StockSprite/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cleanairgames.StockSprite;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "行情精灵";
 			};
 			name = Release;
 		};

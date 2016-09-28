@@ -278,6 +278,11 @@
         CGRect oldFrame = self.view.frame;
         CGRect newFrame = CGRectMake(oldFrame.origin.x, oldFrame.origin.y, oldFrame.size.width - column.width - 3, oldFrame.size.height);
         [self.view.window setContentSize: newFrame.size];
+        
+        NSPoint oldOrigin = self.view.window.frame.origin;
+        CGFloat x = ([NSScreen mainScreen].frame.size.width - self.view.window.frame.size.width) / 2;
+        NSPoint newOrigin = NSMakePoint(x, oldOrigin.y);
+        [self.view.window setFrameOrigin: newOrigin];
     }
 }
 
