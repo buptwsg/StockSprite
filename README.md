@@ -17,5 +17,15 @@ MAC平台上的一款股票行情软件，适合于在办公室看中国A股的�
 1. 股价提醒
 2. 查看分时线，日K线，周K线，月K线等。
 
+# 软件界面截图
+## 行情显示界面
+![](https://github.com/buptwsg/StockSprite/blob/master/hangqing.png)
+
+## 自选股管理界面
+![](https://github.com/buptwsg/StockSprite/blob/master/setting_stock_list.png)
+
+## 显示设置，快捷键设置
+![](https://github.com/buptwsg/StockSprite/blob/master/setting_ui.png)
+
 # 用法：
 可以直接下载“行情精灵.app.zip”，解压后放入“应用程序”目录。
